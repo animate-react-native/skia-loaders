@@ -84,3 +84,6 @@ android/generated
 
 # React Native Nitro Modules
 nitrogen/
+
+# CanvasKit WASM is copied in by the example's postinstall
+example/public/canvaskit.wasm

@@ -2,18 +2,25 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@animatereactnative/curve-loaders": ["./src/index"]
+      "@animatereactnative/skia-loaders": [
+        "./src/index"
+      ],
+      "@animatereactnative/skia-loaders/descriptions": [
+        "./src/descriptions"
+      ]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "customConditions": [
-      "animatereactnative-curve-loaders-source",
+      "animatereactnative-skia-loaders-source",
       "react-native-strict-api"
     ],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext"
+    ],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "noEmit": true,

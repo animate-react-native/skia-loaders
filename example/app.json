@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CurveLoaders Example",
-    "slug": "@animatereactnative/curve-loaders-example",
+    "name": "SkiaLoaders Example",
+    "slug": "@animatereactnative/skia-loaders-example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "animatereactnative.curveloaders.example"
+      "bundleIdentifier": "animatereactnative.skialoaders.example"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,7 +22,7 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "animatereactnative.curveloaders.example"
+      "package": "animatereactnative.skialoaders.example"
     },
     "web": {
       "favicon": "./assets/favicon.png"

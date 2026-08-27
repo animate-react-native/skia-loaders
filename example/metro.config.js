@@ -13,7 +13,7 @@ const root = path.resolve(__dirname, '..');
 const config = withMetroConfig(getDefaultConfig(__dirname), {
   root,
   dirname: __dirname,
-  conditions: ['animatereactnative-curve-loaders-source'],
+  conditions: ['animatereactnative-skia-loaders-source'],
 });
 
 module.exports = config;

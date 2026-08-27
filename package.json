@@ -1,14 +1,19 @@
 {
-  "name": "@animatereactnative/curve-loaders",
+  "name": "@animatereactnative/skia-loaders",
   "version": "0.1.0",
   "description": "Mathematical curve loading animations for React Native, powered by Skia and Reanimated. 20 particle-trail loaders driven entirely on the UI thread.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
     ".": {
-      "animatereactnative-curve-loaders-source": "./src/index.tsx",
+      "animatereactnative-skia-loaders-source": "./src/index.tsx",
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
+    },
+    "./descriptions": {
+      "animatereactnative-skia-loaders-source": "./src/descriptions.ts",
+      "types": "./lib/typescript/src/descriptions.d.ts",
+      "default": "./lib/module/descriptions.js"
     },
     "./package.json": "./package.json"
   },
@@ -32,7 +37,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace @animatereactnative/curve-loaders-example",
+    "example": "yarn workspace @animatereactnative/skia-loaders-example",
     "clean": "del-cli lib",
     "prepare": "bob build",
     "typecheck": "tsc",
@@ -41,18 +46,26 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "skia",
+    "reanimated",
+    "animation",
+    "loader",
+    "spinner",
+    "curve",
+    "math",
+    "particles"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/animate-react-native/curve-loaders.git"
+    "url": "git+https://github.com/animate-react-native/skia-loaders.git"
   },
   "author": "Catalin Miron <mironcatalin@gmail.com> (https://www.animatereactnative.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/animate-react-native/curve-loaders/issues"
+    "url": "https://github.com/animate-react-native/skia-loaders/issues"
   },
-  "homepage": "https://github.com/animate-react-native/curve-loaders#readme",
+  "homepage": "https://github.com/animate-react-native/skia-loaders#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -62,6 +75,7 @@
     "@eslint/js": "^10.0.1",
     "@react-native/babel-preset": "0.85.0",
     "@react-native/eslint-config": "0.85.0",
+    "@shopify/react-native-skia": "2.6.2",
     "@types/react": "^19.2.0",
     "del-cli": "^7.0.0",
     "eslint": "^9.39.4",
@@ -69,15 +83,19 @@
     "eslint-plugin-ft-flow": "^3.0.11",
     "eslint-plugin-prettier": "^5.5.6",
     "prettier": "^3.8.3",
-    "react": "19.2.0",
-    "react-native": "0.83.10",
+    "react": "19.2.3",
+    "react-native": "0.86.2",
     "react-native-builder-bob": "^0.43.0",
+    "react-native-reanimated": "4.5.1",
+    "react-native-worklets": "0.10.1",
     "turbo": "^2.9.16",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
+    "@shopify/react-native-skia": ">=2.0.0",
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-reanimated": ">=4.0.0"
   },
   "workspaces": [
     "example"
