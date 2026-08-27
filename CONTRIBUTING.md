@@ -79,6 +79,16 @@ yarn lint --fix
 
 
 
+### Publishing to npm
+
+We use [release-it](https://github.com/release-it/release-it) to make it easier to publish new versions. It handles common tasks like bumping version based on semver, creating tags and releases etc.
+
+To publish new versions, run the following:
+
+```sh
+yarn release
+```
+
 ### Scripts
 
 The `package.json` file contains various scripts for common tasks:
@@ -91,6 +101,7 @@ The `package.json` file contains various scripts for common tasks:
 - `yarn example ios`: run the example app on iOS.
   - `yarn example web`: run the example app on Web.
 - `yarn example build:web`: build the example app for Web.
+- `yarn release`: publish a new version to npm.
   
 ### Sending a pull request
 

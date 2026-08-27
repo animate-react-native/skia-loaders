@@ -8,7 +8,12 @@ import { Suspense, use } from 'react';
 let promise: Promise<unknown> | null = null;
 
 function SkiaGate({ children }: { children: ReactNode }) {
-  promise ??= LoadSkiaWeb();
+  // CanvasKit resolves canvaskit.wasm relative to its own script URL. In this
+  // monorepo Metro's server root is the repo root, so the bundle is served from
+  // /example/ and that guess becomes /example/canvaskit.wasm — which the dev
+  // server answers with index.html, and the WASM parse fails on `<!DO...`.
+  // The file is served from example/public at the server root, so say so.
+  promise ??= LoadSkiaWeb({ locateFile: (file: string) => `/${file}` });
   use(promise);
   return <>{children}</>;
 }
