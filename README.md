@@ -1,16 +1,21 @@
 <div align="center">
 <h1>React Native Skia Loaders</h1>
 
-<!-- Upload the gallery recording to the repo and paste the asset URL here, e.g.
-     https://github.com/animate-react-native/skia-loaders/assets/2805320/<id> -->
+
+
+https://github.com/user-attachments/assets/7aee7726-0f42-4619-be79-738562838739
+
+
 
 [![NPM Version](https://img.shields.io/npm/v/@animatereactnative/skia-loaders.svg?style=flat&color=black)](https://www.npmjs.org/package/@animatereactnative/skia-loaders) [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/) [![npm](https://img.shields.io/npm/l/@animatereactnative/skia-loaders?style=flat-square)](https://www.npmjs.com/package/@animatereactnative/skia-loaders) [![npm](https://img.shields.io/badge/types-included-blue?style=flat-square)](https://www.npmjs.com/package/@animatereactnative/skia-loaders) <a href="https://twitter.com/mironcatalin"><img src="https://img.shields.io/twitter/follow/mironcatalin?label=Follow @mironcatalin&color=black" alt="Follow Miron Catalin"></a>
 
 </div>
 
+Port of [math-curve-loaders](https://github.com/Paidax01/math-curve-loaders) to React Native using skia
+
 20 mathematical curve loaders for React Native — roses, spirographs, lemniscates, butterflies, hearts — each tracing a parametric curve with a fading comet tail and a slow breathing pulse, powered by Skia and Reanimated:
 
-- 🔋 Powered by Skia & Reanimated 4
+- 🔋 Powered by Skia Atlas & Reanimated 4
 - 📱 Works with Expo, including Expo Go
 - ✅ Cross-platform (iOS, Android, Web)
 - ⚡️ 60-120fps, animated entirely on the UI thread
