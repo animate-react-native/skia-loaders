@@ -1,3 +1,5 @@
+![@animatereactnative/skia-loaders](https://raw.githubusercontent.com/animate-react-native/skia-loaders/main/docs/banner.png)
+
 <div align="center">
 <h1>React Native Skia Loaders</h1>
 
