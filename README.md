@@ -1,4 +1,7 @@
-![@animatereactnative/skia-loaders](https://raw.githubusercontent.com/animate-react-native/skia-loaders/main/docs/banner.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/animate-react-native/skia-loaders/main/docs/banner-dark.png">
+  <img alt="@animatereactnative/skia-loaders" src="https://raw.githubusercontent.com/animate-react-native/skia-loaders/main/docs/banner.png">
+</picture>
 
 <div align="center">
 <h1>React Native Skia Loaders</h1>
